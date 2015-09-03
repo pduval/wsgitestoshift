@@ -40,4 +40,4 @@ class TestWsgiApp(object):
         return lines
 
 import os
-app = TestWsgiApp(os.environ)
+application = TestWsgiApp(os.environ)
