@@ -37,7 +37,7 @@ class TestWsgiApp(object):
 
         lines.append("</body></html>")
         start_response('200 OK', [])
-        return lines
+        return [bytes(l, 'utf-8') for l in lines]
 
 import os
 application = TestWsgiApp(os.environ)
