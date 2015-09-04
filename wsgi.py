@@ -20,7 +20,7 @@ class TestWsgiApp(object):
     <tbody>
 """
 ]
-        for k,v in self.environment.iteritems():
+        for k,v in self.environment.items():
             lines.append("<tr><td>{0}</td><td>{1}</td></tr>\n".format(k,v))
         lines.append("</tbody></table>")
         lines.append("""
@@ -31,7 +31,7 @@ class TestWsgiApp(object):
     <tbody>
         
             """)
-        for k,v in env.iteritems():
+        for k,v in env.items():
             lines.append("<tr><td>{0}</td><td>{1}</td></tr>\n".format(k,v))
         lines.append("</tbody></table>")
 
